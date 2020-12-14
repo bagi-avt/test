@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карзина</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>
+            Ваша корзина
+        </h1>
+        <svg class="icon">
+            <use xlink:href="../../assets/img/icons.svg#exit"></use>
+        </svg>
+    </header>
+    <main>
+        <section class="manipulation-with-all">
+            <label class="label-main-filter" for="features-of-animals">
+                <span>Выбрать всё</span>
+                <input type="checkbox" id="features-of-animals" name="features-of-animals" value="Хорошее послушание">
+                <span class="custom-checkbox">
+                    <svg class="icon">
+                        <use xlink:href="../../assets/img/icons.svg#check-mark"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="label-main-filter label-delete">
+                <span>Удалить всё</span>
+                <svg class="icon delete">
+                    <use xlink:href="../../assets/img/icons.svg#delete"></use>
+                </svg>
+            </label>
+        </section>
+        <div class="line_in_filter"></div>
+        <section class="orders">
+            <ul class="order-list">
+                <li class="order-item">
+                    <label class="label-main-filter" for="features-of-animals1">
+                        <input type="checkbox" id="features-of-animals1" name="features-of-animals" value="Хорошее послушание">
+                        <span class="custom-checkbox">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/img/icons.svg#check-mark"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="image-wrapper">
+                        <div>
+                            <img src="../../assets/img/content/2.jpg" alt="dog">
+                        </div>
+                    </div>
+                    <div class="general-information">
+                        <h3 class="nickname">Афганская борзая</h3>
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <span class="value">1</span>
+                            <span class="plus">+</span>
+                            <label class="label-main-filter label-delete">
+                                <svg class="icon delete">
+                                    <use xlink:href="../../assets/img/icons.svg#delete"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="content-list__price">12 000₽</div>
+                    </div>
+                </li>
+                <li class="order-item">
+                    <label class="label-main-filter" for="features-of-animals2">
+                        <input type="checkbox" id="features-of-animals2" name="features-of-animals" value="Хорошее послушание">
+                        <span class="custom-checkbox">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/img/icons.svg#check-mark"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="image-wrapper">
+                        <div>
+                            <img src="../../assets/img/content/2.jpg" alt="dog">
+                        </div>
+                    </div>
+                    <div class="general-information">
+                        <h3 class="nickname">Афганская борзая</h3>
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <span class="value">1</span>
+                            <span class="plus">+</span>
+                            <label class="label-main-filter label-delete">
+                                <svg class="icon delete">
+                                    <use xlink:href="../../assets/img/icons.svg#delete"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="content-list__price">12 000₽</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="total-row">
+            <p>2 товара на сумму <strong>27 000₽</strong></p>
+            <button>Оформить заказ</button>
+        </section>
+    </main>
+</body>
+</html>

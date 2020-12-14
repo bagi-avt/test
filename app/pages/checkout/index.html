@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-left-part">
+            <div class="logo">
+                <a href="#">
+                    <svg class="icon" viewBox="0 0 57 47" preserveAspectRatio="none">
+                        <use xlink:href="../../img/icons.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <button class="button-catalog">
+                <svg class="icon three-line">
+                    <use xlink:href="../../img/icons.svg#three-line"></use>
+                </svg>
+                <svg class="icon exit-bold">
+                    <use xlink:href="../../img/icons.svg#three-line"></use>
+                </svg>
+                <span>Каталог</span>
+            </button>
+            <div class="search">
+                <label for="input-search" class="label-search">
+                    <input name="search" id="input-search" type="text" required placeholder="Поиск">
+                    <svg class="icon icon-search" >
+                        <use xlink:href="../../img/icons.svg#search"></use>
+                    </svg>
+                </label>
+                <button class="button-search">
+                    <span>Найти</span>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <a href="#">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#bonus"></use>
+                </svg>
+                <span>Бонусы</span>
+            </a>
+            <a href="#">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#box"></use>
+                </svg>
+                <span>Заказы</span>
+            </a>
+            <a href="#">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#award"></use>
+                </svg>
+                <span>Заказы</span>
+            </a>
+            <a href="#" class="button-basket">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#basket"></use>
+                </svg>
+                <span>Карзина (5)</span>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="navigation-unit">
+            <nav class="bread-crumbs">
+                <a href="/hidry">Каталог товаров</a> <span> / </span> <a href="/hidry/dog/">Оформление заказа</a>
+            </nav>
+            <h1>Оформление заказа</h1>
+            <div class="line_in_filter"></div>
+        </div>
+        <section class="grid">
+            <div class="user-data grid-item">
+                <h3>
+                    Получатель
+                </h3>
+                <div class="user-info">
+                    <label for="user-name">Имя</label>
+                    <input type="text" placeholder="Владимир" id="user-name">
+                </div>
+                <div class="user-info">
+                    <label for="user-number">Телефон</label>
+                    <input type="tel" placeholder="+0 000-000-00-00" id="user-number">
+                </div>
+                <h3>
+                    Способ доставки
+                </h3>
+                <div class="delivery">
+                    <label for="pickup">
+                        <input type="radio" name="delivery" id="pickup">
+                        <span>Самовывоз</span>
+                    </label>
+                    <label for="courier">
+                        <input type="radio" name="delivery" id="courier">
+                        <span>Курьер</span>
+                    </label>
+                </div>
+                <h3>
+                    2 товара на сумму <span>27 000₽</span>
+                </h3>
+            </div>
+        </section>
+        <section class="grid">
+            <div class="orders-list grid-item">
+                <ul>
+                    <li class="orders-item">
+                        <div class="general-information">
+                            <div class="image-wrapper">
+                                <div>
+                                    <img src="../../img/content/2.jpg" alt="dog">
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3 class="nickname">Афганская борзая</h3>
+                                <span>1 шт.</span>
+                            </div>
+                        </div>
+                        <div class="price">12 000₽</div>
+                    </li>
+                    <li class="orders-item">
+                    <div class="general-information">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/2.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3 class="nickname">Афганская борзая</h3>
+                            <span>1 шт.</span>
+                        </div>
+                    </div>
+                    <div class="price">12 000₽</div>
+                </li>
+                </ul>
+            </div>
+        </section>
+        <section class="grid">
+            <div class="total-value grid-item">
+                <table class="total-amount">
+                    <tbody>
+                        <tr>
+                            <td>Сумма заказа</td>
+                            <td class="total-price">27 000₽</td>
+                        </tr>
+                        <tr>
+                            <td>Самовывоз</td>
+                            <td class="total-price">0₽</td>
+                        </tr>
+                    </tbody>
+                   <tfoot>
+                       <tr>
+                           <td>Итого с доставкой</td>
+                           <td class="total-price">27 000₽</td>
+                       </tr>
+                   </tfoot>
+                </table>
+                <button>
+                    Создать заказ
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

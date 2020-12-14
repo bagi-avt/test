@@ -1,0 +1,169 @@
+.navigation-unit {
+    display: block;
+}
+h3  {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 10px 0 20px 0;
+}
+.user-data {
+    --span: 4;
+}
+.user-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    line-height: 45px;
+    width: 398px;
+}
+
+.user-info input {
+    background-color: #ffffff;
+    padding: 12px 14px;
+    border: 1px solid #C4C4C4;
+    min-width: 272px;
+}
+.delivery {
+    display: grid;
+}
+.delivery  label {
+    margin-bottom: 25px;
+    display: flex;
+}
+.delivery input {
+    min-width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    background-color: unset;
+    position: relative;
+    appearance: none;
+    outline: none;
+}
+.delivery input:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(0,0,0,.5);
+}
+.delivery input:checked::before {
+    border-color:var(--yellow-color);
+}
+.delivery input:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--yellow-color);
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.delivery  label span {
+    font-size: 16px;
+    font-weight: 400;
+}
+.orders-list {
+    --span: 8;
+    border-top: 1px solid var(--charocal-silver);
+}
+.orders-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--charocal-silver);
+}
+.general-information {
+    display: flex;
+    height: 106px;
+    align-items: center;
+    flex: 1;
+}
+.nickname {
+    margin-left: 14px;
+    font-weight: 400;
+}
+.info {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.info span {
+    flex: 1;
+    text-align: end;
+    margin-left: 14px;
+}
+.image-wrapper {
+    width: 100px;
+}
+.price {
+    width: 182px;
+    text-align: end;
+    font-size: 18px;
+    font-weight: 600;
+}
+.total-value {
+    --span: 3;
+}
+.total-amount {
+    width: 100%;
+    border-collapse: collapse;
+}
+.total-amount tr {
+    height: 45px;
+    border-top: 1px solid var(--charocal-silver);
+}
+.total-amount tfoot td {
+    font-weight: 600;
+}
+.total-price {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.total-value button{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+@media (max-width: 1023px) {
+    .total-amount,
+    .total-value button {
+        width: 300px;
+    }
+}
+@media (max-width: 639px) {
+    h1 {
+        font-size: 24px;
+    }
+    .user-info{
+        width: 280px;
+    }
+    .user-info input {
+        min-width: 192px;
+    }
+    .orders-item {
+        display: block;
+    }
+    .info {
+        display: block;
+    }
+    .price {
+        text-align: left;
+        margin-left: 21px;
+    }
+    .total-amount,
+    .total-value button {
+        width: 100%;
+    }
+}

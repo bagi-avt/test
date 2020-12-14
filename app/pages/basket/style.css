@@ -1,0 +1,137 @@
+.main-header {
+    align-items: center;
+}
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    flex: 1;
+}
+header svg {
+    width: 14px;
+    height: 14px;
+}
+.manipulation-with-all {
+    display: flex;
+    justify-content: space-between;
+}
+.label-delete {
+    padding-right: 32px;
+}
+.line_in_filter {
+    margin: 14px 0 0 0;
+}
+.delete{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    margin: 3px 14px;
+}
+.total-row{
+    text-align: center;
+}
+.total-row p{
+    margin: 25px 0 20px 0;
+}
+.total-row button{
+    font-size: 14px;
+    line-height: 17px;
+    height: auto;
+    padding: 10px 20px;
+}
+.order-item{
+    position: relative;
+    height: 80px;
+    display: flex;
+    border-bottom: 1px solid var(--charocal-silver);
+    align-items: center;
+}
+.label-main-filter {
+    padding-left: 38px;
+}
+.label-delete {
+    padding-left: 0;
+}
+.order-item .image-wrapper{
+    width: 100px;
+    min-width: 100px;
+}
+.general-information {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.general-information .label-main-filter {
+    padding-left: 0;
+}
+.number {
+    display: flex;
+    height: 24px;
+    margin-left: 14px;
+}
+.number .label-delete {
+    margin: 0;
+    position: absolute;
+    right: 0;
+}
+.number .value {
+    margin: 0 12px;
+}
+.minus, .plus{
+    width:24px;
+    height:24px;
+    border-radius:4px;
+    border:1px solid var(--charocal-silver);
+    display: inline-block;
+    text-align: center;
+    padding-top: 3px;
+}
+.content-list__price {
+    text-align: right;
+    margin-right: 32px;
+}
+@media (max-width: 1023px) {
+    .main-header {
+        margin: 0 40px;
+        display: flex;
+    }
+    main {
+        margin: 0 40px;
+    }
+}
+@media (max-width: 639px) {
+    .main-header {
+        margin: 0 20px;
+    }
+    main {
+        margin: 0 20px;
+    }
+    h1 {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .general-information {
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-evenly;
+        height: 70px;
+        margin-top: -32px;
+    }
+    .order-item {
+        height: 122px;
+    }
+    .image-wrapper > div {
+        margin-top: -10px;
+    }
+    .number{
+        margin: 0;
+    }
+    .content-list__price {
+        position: absolute;
+        left: 45px;
+        bottom: 5px;
+    }
+}

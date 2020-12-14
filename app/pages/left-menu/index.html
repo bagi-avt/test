@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidry</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-left-part">
+            <div class="logo">
+                <a href="#">
+                    <svg class="icon" viewBox="0 0 57 47" preserveAspectRatio="none">
+                        <use xlink:href="../../img/icons.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <button class="button-catalog">
+                <svg class="icon three-line">
+                    <use xlink:href="../../img/icons.svg#three-line"></use>
+                </svg>
+                <svg class="icon exit-bold">
+                    <use xlink:href="../../img/icons.svg#three-line"></use>
+                </svg>
+                <span>Каталог</span>
+            </button>
+            <div class="search">
+                <label for="input-search" class="label-search">
+                    <input name="search" id="input-search" type="text" required placeholder="Поиск">
+                    <svg class="icon icon-search" >
+                        <use xlink:href="../../img/icons.svg#search"></use>
+                    </svg>
+                </label>
+                <button class="button-search">
+                    <span>Найти</span>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <a href="#">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#bonus"></use>
+                </svg>
+                <span>Бонусы</span>
+            </a>
+            <a href="#">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#box"></use>
+                </svg>
+                <span>Заказы</span>
+            </a>
+            <a href="#">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#award"></use>
+                </svg>
+                <span>Заказы</span>
+            </a>
+            <a href="#" class="button-basket">
+                <svg class="icon">
+                    <use xlink:href="../../img/icons.svg#basket"></use>
+                </svg>
+                <span>Карзина (5)</span>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="category">
+            <h2 class="header-dog">
+                <a href="#">
+                    Собачки
+                </a>
+            </h2>
+            <h2 class="header-cat">
+                <a href="#">
+                    Котики
+                </a>
+            </h2>
+        </header>
+        <div class="navigation-unit">
+            <nav class="bread-crumbs">
+                <a href="/hidry">Каталог товаров</a> <span> / </span> <a href="/hidry/dog/">Собаки</a>
+            </nav>
+            <h1>Собачки</h1>
+            <div class="line_in_filter"></div>
+        </div>
+        <div class="button-filter">
+            <svg class="icon">
+                <use xlink:href="../../img/icons.svg#filter"></use>
+            </svg>
+            <div>
+                Фильтр
+            </div>
+        </div>
+        <div class="modal-back"></div>
+        <section class="main grid">
+            <aside class="main-filter grid-item">
+                <h3 class="title-filter">
+                    <svg class="icon">
+                        <use xlink:href="../../img/icons.svg#arrow-left"></use>
+                    </svg>
+                    Фильтр
+                </h3>
+                <form action="/" method="get">
+                    <div class="line_in_filter"></div>
+                    <label class="main-filter-subcategory">
+                        <b>Тип</b>
+                        <svg class="icon">
+                            <use xlink:href="../../img/icons.svg#arrow-top"></use>
+                        </svg>
+                    </label>
+                    <label class="label-main-filter" for="type-of-animal1">
+                        <span>Охотничьи</span>
+                        <input type="checkbox" id="type-of-animal1" name="type-of-animal" value="Охотничьи">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="label-main-filter" for="type-of-animal2">
+                        <span>Компаньоны</span>
+                        <input type="checkbox" id="type-of-animal2" name="type-of-animal" value="Компаньоны">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="label-main-filter" for="type-of-animal3">
+                        <span>Декоративные</span>
+                        <input type="checkbox" id="type-of-animal3" name="type-of-animal" value="Декоративные">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="label-main-filter" for="type-of-animal4">
+                        <span>Служебные</span>
+                        <input type="checkbox" id="type-of-animal4" name="type-of-animal" value="Служебные">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <div class="line_in_filter"></div>
+                    <label class="main-filter-subcategory">
+                        <b>Основные черты</b>
+                        <svg class="icon">
+                            <use xlink:href="../../img/icons.svg#arrow-top"></use>
+                        </svg></label>
+                    <label for="filter-input-search" class="filter-label-search">
+                        <input name="search" id="filter-input-search" type="text" placeholder="Быстрый поиск">
+                        <svg class="icon icon-search" >
+                            <use xlink:href="../../img/icons.svg#search"></use>
+                        </svg>
+                    </label>
+                    <label class="label-main-filter" for="features-of-animals1">
+                        <span>Отсутствует чувство страха</span>
+                        <input type="checkbox" id="features-of-animals1" name="features-of-animals" value="Отсутствует чувство страха">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="label-main-filter" for="features-of-animals2">
+                        <span>Мало линяет</span>
+                        <input type="checkbox" id="features-of-animals2" name="features-of-animals" value="Мало линяет">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="label-main-filter" for="features-of-animals3">
+                        <span>Отличное здоровье</span>
+                        <input type="checkbox" id="features-of-animals3" name="features-of-animals" value="Отличное здоровье">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="label-main-filter" for="features-of-animals4">
+                        <span>Хорошее послушание</span>
+                        <input type="checkbox" id="features-of-animals4" name="features-of-animals" value="Хорошее послушание">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="label-main-filter" for="features-of-animals5">
+                        <span>Очень преданная</span>
+                        <input type="checkbox" id="features-of-animals5" name="features-of-animals" value="Очень преданная">
+                        <span class="custom-checkbox">
+                                <svg class="icon">
+                                    <use xlink:href="../../img/icons.svg#check-mark"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="show-more">Показать еще</label>
+                    <div class="line_in_filter"></div>
+                    <label class="main-filter-subcategory">
+                        <b>Размер, кг</b>
+                        <svg class="icon">
+                            <use xlink:href="../../img/icons.svg#arrow-top"></use>
+                        </svg></label>
+                    <div class="size-between">
+                        <label class="filter-size-min" for="min-size">
+                            c
+                        </label>
+                        <input id="min-size" type="number" min="0">
+                        <label class="filter-size-min" for="max-size">
+                            до
+                        </label>
+                        <input id="max-size" type="number" min="0">
+                    </div>
+                </form>
+            </aside>
+            <div class="main-content grid-item">
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/1.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Айну</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/2.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Афганская борзая</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/3.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Айну</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/4.png" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Афганская борзая</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/1.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Айну</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/2.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Афганская борзая</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/3.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Айну</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/4.png" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Афганская борзая</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/5.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Афганская борзая</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/1.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Айну</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/2.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Афганская борзая</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                    <li class="content-list__item">
+                        <div class="image-wrapper">
+                            <div>
+                                <img src="../../img/content/3.jpg" alt="dog">
+                            </div>
+                        </div>
+                        <div class="general-information">
+                            <h3 class="nickname">Айну</h3>
+                            <div class="content-list__price">12 000₽</div>
+                            <button>В карзину</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="button_more">Показать ещё</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

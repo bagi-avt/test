@@ -1,0 +1,18 @@
+@media (max-width: 639px) {
+    .main-header > nav{
+        display: flex;
+        position: fixed;
+        left: 0;
+        background-color: white;
+        width: 100vw;
+    }
+    .button-catalog .exit-bold {
+        display: initial;
+    }
+    .button-catalog .three-line {
+        display: none;
+    }
+    .category {
+        display: none;
+    }
+}
